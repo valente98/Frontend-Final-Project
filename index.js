@@ -1,32 +1,12 @@
-const slideShow = [
-    {
-        img_url:
-            'https://asyncinterview.com/wp-content/uploads/2014/09/Real-Estate-Agent.jpg',
-        description: 'Selling home to recent married couples'
-    },
-    {
-        img_url:
-            'http://media.beam.usnews.com/be/0d/94d77cf94380b5e5b5cc7fdd12e0/141107-realestateagent-stock',
-        description: 'Buy home for you and your family'
-    }
-];
-function SlideShow(show) {
-    var html =
-        '<br><img class="mySlides" style="display: none;" src="' +
-        show.img_url +
-        '"  height="400" width="600">';
-    html += '<p id="description">' + show.description + '</p>';
-    return html;
-}
+var slides = document.querySelectorAll('#slides .slide');
+console.log(slides);
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide, 4000);
 
-function showSlideShow() {
-    var html = slideShow
-        .map(function(show) {
-            return SlideShow(show);
-        })
-        .join('');
-    $('#slideshow').html(html);
-    console.log(html);
+function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = 'slide showing';
 }
 var myIndex = 0;
 
@@ -45,8 +25,8 @@ function carousel() {
 }
 
 function main() {
-    showSlideShow();
     carousel();
+    nextSlide();
 }
 
 $(main);
