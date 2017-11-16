@@ -1,5 +1,5 @@
 //*************************** Cleats inventory *********************/
-var CLEATS = {
+var BRANDS = {
     nike: [
         {
             cleat: [
