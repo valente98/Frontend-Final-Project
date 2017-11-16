@@ -1,3 +1,4 @@
+// ***************************** text slide function ***************/
 var slides = document.querySelectorAll('#slides .slide');
 console.log(slides);
 var currentSlide = 0;
@@ -8,6 +9,7 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+//**************************** image slide function ******************/
 var myIndex = 0;
 
 function carousel() {
@@ -23,7 +25,7 @@ function carousel() {
     x[myIndex - 1].style.display = 'block';
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
-
+//********************** Main *********************************/
 function main() {
     carousel();
     nextSlide();
