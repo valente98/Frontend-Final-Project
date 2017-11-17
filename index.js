@@ -358,44 +358,44 @@ var BRANDS = {
             ],
             Gear: [
                 {
-                    img_url: './assets/photos/FIFABALL.jpg',
-                    name: 'FIFA WORlD CUP OFFICIAL GAME BALL',
-                    price: '165'
+                    img_url: './assets/photos/pumasbackpack.jpg',
+                    name: 'Formation 2.0 Soccer Ball Backpack',
+                    price: '35'
                 },
                 {
-                    img_url: './assets/photos/adidassock.jpg',
-                    name: 'TEAM SPEED SOCCER SOCK 1 PAIR',
-                    price: '16'
+                    img_url: './assets/photos/pumasmatchball.jpg',
+                    name: 'EvoPower 2.3 Match Soccer Ball',
+                    price: '60'
                 },
                 {
-                    img_url: './assets/photos/adidasbag.jpg',
-                    name: 'X 17.1 TEAM BAG',
-                    price: '70'
+                    img_url: './assets/photos/pumastrainingball.jpg',
+                    name: 'Powercamp 2.0 Training Soccer Ball',
+                    price: '30'
                 },
                 {
                     img_url: './assets/photos/adidasglove.jpg',
-                    name: 'ACE TRANS PRO GLOVE',
-                    price: '115'
+                    name: 'EvoPOWER Super 3 Goalkeeper Gloves',
+                    price: '90'
                 },
                 {
                     img_url: './assets/photos/adidasgloves.jpg',
-                    name: 'FIELDPLAYERGLOVES',
+                    name: 'EvoPower 1.3 Slip Shin Guards',
                     price: '25'
                 },
                 {
-                    img_url: './assets/photos/adidasshinguard.jpg',
-                    name: 'GHOST GRAPHIC MAGNETIC STORM SHIN GUARDS',
-                    price: '25'
+                    img_url: './assets/photos/pumasblackoutball.jpg',
+                    name: 'Black Out Training Soccer Ball',
+                    price: '17'
                 },
                 {
                     img_url: './assets/photos/madridScarf.jpg',
-                    name: 'REAL MADRID SCARF',
-                    price: '25'
+                    name: 'Arsenal Performance Backpack',
+                    price: '30'
                 },
                 {
                     img_url: './assets/photos/manchesterscarf.jpg',
-                    name: 'MANCHESTER UNITED SCARF',
-                    price: '25'
+                    name: 'Arsenal Striped Socks',
+                    price: '18'
                 }
             ]
         }
