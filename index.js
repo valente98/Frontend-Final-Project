@@ -139,7 +139,7 @@ var BRANDS = {
             ]
         }
     ],
-    Addidas: [
+    adidas: [
         {
             cleat: [
                 {
@@ -269,7 +269,7 @@ var BRANDS = {
             ]
         }
     ],
-    Pumas: [
+    pumas: [
         {
             cleat: [
                 {
@@ -417,9 +417,21 @@ function carousel() {
     x[myIndex - 1].style.display = 'block';
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
+//********************** brand product ************************/
+function showbrandoption() {
+    $('#brand-option').toggle('hidden', false);
+}
+function brandProduct(brand) {}
+function showbrandproduct(brand) {
+    html = brandProduct();
+    $('#slideshow').attr('hidden');
+    $('#brand-products').html(html);
+}
+
 //********************** Main *********************************/
 function main() {
     carousel();
+    showbrandproduct();
 }
 
 $(main);
