@@ -24,18 +24,20 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a class="active" href="#home">Nike</a>
-                    </li>
-                    <li>
-                        <a class="active" href="#home">Addidas</a>
-                    </li>
-                    <li>
-                        <a href="#news">Pumas</a>
-                    </li>
-                    <li>
-                        <a href="#news">All</a>
-                    </li>
+                    <center>
+                        <li>
+                            <a class="active" onclick="showbrandoption(nike)">Nike</a>
+                        </li>
+                        <li>
+                            <a class="active" onclick="showbrandoption(adidas)">Adidas</a>
+                        </li>
+                        <li>
+                            <a onclick="showbrandoption(pumas)">Pumas</a>
+                        </li>
+                        <li>
+                            <a>All</a>
+                        </li>
+                    </center>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <input id="search" type="text" name="search" placeholder="Search..">
@@ -50,17 +52,26 @@
                 </ul>
             </div>
         </nav>
+        <div id="brand-option" hidden>
+            <center>
+                <button id="option" onclick="optionproduct()">Cleats</button>
+                <button id="option" onclick="optionproduct()">Clothing</button>
+                <button id="option" onclick="optionproduct()">Gear</button>
+                <button id="option" onclick="optionproduct()">All</button>
+            </center>
+        </div>
         <div id="images" class="col-lg-6">
             <div id="slideshow">
-                <img class="mySlides" style="display: none;" src="./assets/photos/ACE17FIFA.jpg" height="500" width="500">
-                <img class="mySlides" style="display: none;" src="./assets/photos/redHypervenom.jpg" height="500" width="500">
+                <img class="mySlides" style="display: none;" src="./assets/photos/ACE17FIFA.jpg" height="400" width="400">
+                <img class="mySlides" style="display: none;" src="./assets/photos/redHypervenom.jpg" height="400" width="400">
+                <img class="mySlides" style="display: none;" src="./assets/photos/ACE17.jpg" height="400" width="400">
+                <img class="mySlides" style="display: none;" src="./assets/photos/ACETurf.jpg" height="400" width="400">
+                <img class="mySlides" style="display: none;" src="./assets/photos/adidasbag.jpg" height="400" width="400">
+                <img class="mySlides" style="display: none;" src="./assets/photos/blueSuperfly.jpg" height="400" width="400">
+                <img class="mySlides" style="display: none;" src="./assets/photos/pumaevo.jpg" height="400" width="400">
             </div>
         </div>
-        <div class="col-lg-4">
-            <div>
-                <p></p>
-            </div>
-        </div>
+        <div id="brand-products" class="col-lg-4"></div>
     </div>
 
     <script src="vendor/jquery.js"></script>
