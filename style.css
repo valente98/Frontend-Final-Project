@@ -56,7 +56,7 @@ li {
 
 li a {
     display: block;
-    width: 30vh;
+    width: 6pc;
     color: blue;
     text-align: center;
     padding: 14px 16px;
@@ -73,11 +73,14 @@ li a:hover {
     background-color: #fff;
     height: 40px;
     color: blue;
-    width: 40pc;
+    width: 50pc;
 }
 #option {
     width: 20vh;
     background: none;
     border: none;
     color: blue;
+}
+#option:hover {
+    background-color: black;
 }
