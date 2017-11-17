@@ -160,7 +160,7 @@ var BRANDS = {
                 },
                 {
                     img_url: './assets/photos/ACE17FIFA.jpg',
-                    name: 'ACE !&+ PURECONTROL FIFA CONFEDERATIONS CUP FIRM',
+                    name: 'ACE 17+ PURECONTROL FIFA CONFEDERATIONS CUP FIRM',
                     price: '300'
                 },
                 {
@@ -274,86 +274,86 @@ var BRANDS = {
         {
             cleat: [
                 {
-                    img_url: './assets/photos/ACE17.jpg',
-                    name: 'ACE 17+ PURECONTROL FIRM GROUND CLEATS:',
-                    price: '300'
+                    img_url: './assets/photos/pumaone.jpg',
+                    name: "PUMA ONE Chrome FG Men's Soccer Cleats",
+                    price: '275'
                 },
                 {
-                    img_url: './assets/photos/NEMEZIZ17.jpg',
-                    name: 'NEMEZIZ 17+ 360 AGILITY FIRM GROUND CLEATS',
-                    price: '320'
+                    img_url: './assets/photos/pumaevo.jpg',
+                    name: 'EvoPower Vigor 1 Graphic FG',
+                    price: '220'
                 },
                 {
-                    img_url: './assets/photos/NEMEZIZ17.3.jpg',
-                    name: 'NEMEZIZ MESSI TANGO 17.3 TURF SHOES',
-                    price: '80'
+                    img_url: './assets/photos/pumaevo4jpg',
+                    name: 'EvoPower vigor 4 Graphic TT',
+                    price: '65'
                 },
                 {
-                    img_url: './assets/photos/ACE17FIFA.jpg',
-                    name: 'ACE !&+ PURECONTROL FIFA CONFEDERATIONS CUP FIRM',
-                    price: '300'
+                    img_url: './assets/photos/pumaevotouch.jpg',
+                    name: 'EvoTOUCH PRO FG',
+                    price: '220'
                 },
                 {
                     img_url: './assets/photos/copa17.3.jpg',
-                    name: 'COPA 17.3 FIRM GROUND CLEATS',
-                    price: '70'
+                    name: 'King Top Italian Firm Ground Soccer Cleats',
+                    price: '155'
                 },
                 {
-                    img_url: './assets/photos/copaMundial.jpg',
-                    name: 'COPA MUNDIAL CLEATS',
-                    price: '150'
+                    img_url: './assets/photos/pumaevotouch3.jpg',
+                    name: 'EvoTOUCH 3 FG',
+                    price: '35'
                 },
                 {
-                    img_url: './assets/photos/ACETurf.jpg',
-                    name: 'ACE TANGO 17+ PURECONTROL TURF SHOES',
-                    price: '153'
+                    img_url: './assets/photos/pumaevospeed.jpg',
+                    name: 'EvoSPEED SL II Graphic FG',
+                    price: '120'
                 },
                 {
-                    img_url: './assets/photos/copaTurf.jpg',
-                    name: 'COPA TANGO 17.3 TURF SHOES',
-                    price: '60'
+                    img_url: './assets/photos/pumaNETFIT.jpg',
+                    name: '365 NETFIT CT',
+                    price: '80'
                 }
             ],
             Clothing: [
                 {
-                    img_url: './assets/photos/tiro17.jpg',
-                    name: 'TIRO 17 TRAINING PANTS',
-                    price: '45'
-                },
-                {
-                    img_url: './assets/photos/tangohoodie.jpg',
-                    name: 'TANGO CAGE HOODIE',
+                    img_url: './assets/photos/Evowintertop.jpg',
+                    name: 'EvoTRG Winter Top',
                     price: '60'
                 },
                 {
-                    img_url: './assets/photos/tangosweatshirt.jpg',
-                    name: 'TANGO FUTURE SWEATSHIRT',
-                    price: '75'
-                },
-                {
-                    img_url: './assets/photos/tirorainjacket.jpg',
-                    name: 'TIRO 17 RAIN JACKET',
-                    price: '90'
-                },
-                {
-                    img_url: './assets/photos/tangopogba.jpg',
-                    name: 'TANGO PAUL POGBA GRAPHIC TEE',
+                    img_url: './assets/photos/evothermaljacket.jpg',
+                    name: 'EvoTRG Thermo Jacket',
                     price: '55'
                 },
                 {
-                    img_url: './assets/photos/tangotrainingjacket.jpg',
-                    name: 'TIRO 17 TRAINING JACKET',
+                    img_url: './assets/photos/evotrackjacket.jpg',
+                    name: 'EvoTRG Soccer Track Jacket',
                     price: '65'
                 },
                 {
-                    img_url: './assets/photos/tangohybrid.jpg',
-                    name: 'TANGO FUTURE HYBRID TOP',
-                    price: '75'
+                    img_url: './assets/photos/evotrainingpants.jpg',
+                    name: 'EvoTRG Soccer Training Pants',
+                    price: '50'
                 },
                 {
-                    img_url: './assets/photos/tangostadium.jpg',
-                    name: 'TANGO STADIUM ICON TRACK JACKET',
+                    img_url: './assets/photos/evotechpants.jpg',
+                    name: 'EvoTRG Tech Soccer Training Pants',
+                    price: '65'
+                },
+                {
+                    img_url: './assets/photos/evotechshorts.jpg',
+                    name: 'EvoTRG Tech Soccer Training Shorts',
+                    price: '20'
+                },
+                {
+                    img_url: './assets/photos/evowintervest.jpg',
+                    name: 'EvoTRG Winter Vest',
                     price: '60'
+                },
+                {
+                    img_url: './assets/photos/evotraininghoodie.jpg',
+                    name: 'EvoTRG Soccer Training Hoodie',
+                    price: '65'
                 }
             ],
             Gear: [
