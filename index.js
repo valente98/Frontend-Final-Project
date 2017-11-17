@@ -11,18 +11,17 @@ var BRANDS = {
                 },
                 {
                     img_url: './assets/photos/redMagista.jpg',
-                    name:
-                        'Nike Magista Obra II FG Soccer Cleat-Black/White/Hyper',
+                    name: 'Nike Magista Onda II Dynamic FIT FG',
                     price: '299.99'
                 },
                 {
-                    img_url: './assets/photos/redSuperfly.jpg',
+                    img_url: './assets/photos/redsuperfly.webp',
                     name:
                         'Nike Mercurial Superfly V FG Soccer Cleat - Bright Crimson/Black/University Red/Hyper Crimson ',
                     price: '299.99'
                 },
                 {
-                    img_url: './assets/photos/redTiempo.jpg',
+                    img_url: './assets/photos/redtiempo.webp',
                     name:
                         'Nike Tiempo Legend VII FG Soccer Cleat - Univeristy Red/White/Black/Bright Crimson',
                     price: '229.99'
@@ -46,7 +45,7 @@ var BRANDS = {
                     price: '299.99'
                 },
                 {
-                    img_url: './assets/photos/blueTiempo.jpg',
+                    img_url: './assets/photos/bluetiempo.webp',
                     name:
                         'Nike Tiempo Legend VII FG Soccer Cleat - Gamma Blue/White/Obsidian/Glacier Blue',
                     price: '229.99'
