@@ -417,21 +417,27 @@ function carousel() {
     x[myIndex - 1].style.display = 'block';
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
-//********************** brand product ************************/
-function showbrandoption() {
-    $('#brand-option').toggle('hidden', false);
+//********************** nike brand product ************************/
+function nikecleatsproduct(x) {
+    var html = '<p><img src="' + x.cleat.img_url + '"/></p>';
+    html += '<p>' + x.cleat.name + '</p>';
+    html += '<p>' + x.cleat.price + '</p>';
+    return html;
 }
-function brandProduct(brand) {}
-function showbrandproduct(brand) {
-    html = brandProduct();
-    $('#slideshow').attr('hidden');
-    $('#brand-products').html(html);
+function nikecleats() {
+    var html =
+        '<h2> CLeats</h2>' +
+        BRANDS.nike.map(function(x) {
+            return nikecleatsproduct(x);
+        });
+    $('#cleats').html(html);
 }
-
+function shownikeproduct() {
+    nikecleats();
+}
 //********************** Main *********************************/
 function main() {
     carousel();
-    showbrandproduct();
 }
 
 $(main);
