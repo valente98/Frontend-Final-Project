@@ -20,16 +20,16 @@
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="active" onclick="showbrandoption()">Nike</a>
+                        <a class="active" onclick="shownikeproduct()">Nike</a>
                     </li>
                     <li>
-                        <a onclick="showbrandoption()">Adidas</a>
+                        <a onclick="showbrandproduct(adidas)">Adidas</a>
                     </li>
                     <li>
-                        <a onclick="showbrandoption()">Pumas</a>
+                        <a onclick="showbrandproduct(pumas)">Pumas</a>
                     </li>
                     <li>
-                        <a onclick="showbrandoption()">All</a>
+                        <a onclick="showbrandproduct(all)">All</a>
                     </li>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -45,23 +45,6 @@
                 </ul>
             </div>
         </nav>
-        <div id="brand-option" hidden>
-            <ul class="nav navbar-nav">
-                <li>
-                    <a class="active" onclick="showbrandoption()">Cleats</a>
-                </li>
-                <li>
-                    <a onclick="showbrandoption()">Clothing</a>
-                </li>
-                <li>
-                    <a onclick="showbrandoption()">Gear</a>
-                </li>
-                <li>
-                    <a onclick="">All</a>
-                </li>
-            </ul>
-        </div>
-        <br>
         <div id="images" class="col-lg-6">
             <div id="slideshow">
                 <img class="mySlides" style="display: none;" src="./assets/photos/ACE17FIFA.jpg" height="400" width="400">
@@ -73,7 +56,9 @@
                 <img class="mySlides" style="display: none;" src="./assets/photos/pumaevo.jpg" height="400" width="400">
             </div>
         </div>
-        <div id="brand-products" class="col-lg-4"></div>
+        <div id="cleats" class="col-lg-4"></div>
+        <div id="clothing" class="col-lg-4"></div>
+        <div id="gear" class="col-lg-4"></div>
     </div>
 
     <script src="vendor/jquery.js"></script>
