@@ -5,8 +5,7 @@ var BRANDS = {
             cleat: [
                 {
                     img_url: './assets/photos/redHypervenom.jpg',
-                    name:
-                        'Nike Hypervenom Phantom III DF Soccer Cleat-University',
+                    name: 'Nike Hypervenom Phantom III DF',
                     price: '299.99'
                 },
                 {
@@ -16,38 +15,32 @@ var BRANDS = {
                 },
                 {
                     img_url: './assets/photos/redsuperfly.webp',
-                    name:
-                        'Nike Mercurial Superfly V FG Soccer Cleat - Bright Crimson/Black/University Red/Hyper Crimson ',
+                    name: 'Nike Mercurial Superfly V FG',
                     price: '299.99'
                 },
                 {
                     img_url: './assets/photos/redtiempo.webp',
-                    name:
-                        'Nike Tiempo Legend VII FG Soccer Cleat - Univeristy Red/White/Black/Bright Crimson',
+                    name: 'Nike Tiempo Legend VII FG',
                     price: '229.99'
                 },
                 {
                     img_url: './assets/photos/blueHypervenom.jpg',
-                    name:
-                        'Nike Hypervenom Phantom III DF FG Soccer Cleat - Thunder Blue/Glacier Blue/Gamma Blue/White',
+                    name: 'Nike Hypervenom Phantom III DF FG',
                     price: '299.99'
                 },
                 {
                     img_url: './assets/photos/blueMagista.jpg',
-                    name:
-                        'Nike Magista Obra II FG Soccer Cleat - Thunder Blue/Glacier Blue/Gamma Blue/White',
+                    name: 'Nike Magista Obra II FG',
                     price: '299.99'
                 },
                 {
                     img_url: './assets/photos/blueSuperfly.jpg',
-                    name:
-                        'Nike Mercurial Superfly V FG Soccer Cleat - Thunder Blue/Glacier Blue/Gamma Blue/White',
+                    name: 'Nike Mercurial Superfly V FG',
                     price: '299.99'
                 },
                 {
                     img_url: './assets/photos/bluetiempo.webp',
-                    name:
-                        'Nike Tiempo Legend VII FG Soccer Cleat - Gamma Blue/White/Obsidian/Glacier Blue',
+                    name: 'Nike Tiempo Legend VII FG',
                     price: '229.99'
                 }
             ],
@@ -417,27 +410,64 @@ function carousel() {
     x[myIndex - 1].style.display = 'block';
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
-//********************** nike brand product ************************/
+//********************** nike cleats product ************************/
 function nikecleatsproduct(x) {
-    var html = '<p><img src="' + x.cleat.img_url + '"/></p>';
-    html += '<p>' + x.cleat.name + '</p>';
-    html += '<p>' + x.cleat.price + '</p>';
+    var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
+    html += '<p>' + x.name + '</p>';
+    html += '<p>$' + x.price + '</p>';
     return html;
 }
 function nikecleats() {
     var html =
         '<h2> CLeats</h2>' +
-        BRANDS.nike.map(function(x) {
+        BRANDS.nike[0].cleat.map(function(x) {
             return nikecleatsproduct(x);
         });
+    console.log(html);
     $('#cleats').html(html);
+}
+//********************* nike clothing product **********************/
+function nikeclothingproduct(x) {
+    var html =
+        '<p><img src="' + x.img_url + '" width="225" height="225" /></p>';
+    html += '<p>' + x.name + '</p>';
+    html += '<p>$' + x.price + '</p>';
+    return html;
+}
+function nikeclothing() {
+    var html =
+        '<h2> Clothing</h2>' +
+        BRANDS.nike[0].Clothing.map(function(x) {
+            return nikeclothingproduct(x);
+        });
+    console.log(html);
+    $('#clothing').html(html);
+}
+//********************* nike gear product **********************/
+function nikegearproduct(x) {
+    var html = '<p><img src="' + x.img_url + '"/></p>';
+    html += '<p>' + x.name + '</p>';
+    html += '<p>$' + x.price + '</p>';
+    return html;
+}
+function nikegear() {
+    var html =
+        '<h2> Gear</h2>' +
+        BRANDS.nike[0].Gear.map(function(x) {
+            return nikegearproduct(x);
+        });
+    console.log(html);
+    $('#gear').html(html);
 }
 function shownikeproduct() {
     nikecleats();
+    nikeclothing();
+    nikegear();
 }
 //********************** Main *********************************/
 function main() {
     carousel();
+    console.log(BRANDS.nike[0]);
 }
 
 $(main);
