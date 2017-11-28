@@ -464,6 +464,60 @@ function shownikeproduct() {
     nikeclothing();
     nikegear();
 }
+//********************** adidas cleats product ************************/
+function adidascleatsproduct(x) {
+    var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
+    html += '<p>' + x.name + '</p>';
+    html += '<p>$' + x.price + '</p>';
+    return html;
+}
+function adidascleats() {
+    var html =
+        '<h2> CLeats</h2>' +
+        BRANDS.adidas[0].cleat.map(function(x) {
+            return adidascleatsproduct(x);
+        });
+    console.log(html);
+    $('#cleats').html(html);
+}
+//********************* adidas clothing product **********************/
+function adidasclothingproduct(x) {
+    var html =
+        '<p><img src="' + x.img_url + '" width="225" height="225" /></p>';
+    html += '<p>' + x.name + '</p>';
+    html += '<p>$' + x.price + '</p>';
+    return html;
+}
+function adidasclothing() {
+    var html =
+        '<h2> Clothing</h2>' +
+        BRANDS.adidas[0].Clothing.map(function(x) {
+            return adidasclothingproduct(x);
+        });
+    console.log(html);
+    $('#clothing').html(html);
+}
+//********************* adidas gear product **********************/
+function adidasgearproduct(x) {
+    var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
+    html += '<p>' + x.name + '</p>';
+    html += '<p>$' + x.price + '</p>';
+    return html;
+}
+function adidasgear() {
+    var html =
+        '<h2> Gear</h2>' +
+        BRANDS.adidas[0].Gear.map(function(x) {
+            return adidasgearproduct(x);
+        });
+    console.log(html);
+    $('#gear').html(html);
+}
+function showadidasproduct() {
+    adidascleats();
+    adidasclothing();
+    adidasgear();
+}
 //********************** Main *********************************/
 function main() {
     carousel();
