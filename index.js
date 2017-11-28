@@ -472,6 +472,7 @@ function nikegear() {
     $('#gear').html(html);
 }
 function shownikeproduct() {
+    $('#images').attr('hidden', true);
     nikecleats();
     nikeclothing();
     nikegear();
@@ -538,6 +539,7 @@ function adidasgear() {
     $('#gear').html(html);
 }
 function showadidasproduct() {
+    $('#images').attr('hidden', true);
     adidascleats();
     adidasclothing();
     adidasgear();
@@ -604,6 +606,7 @@ function pumasgear() {
     $('#gear').html(html);
 }
 function showpumasproduct() {
+    $('#images').attr('hidden', true);
     pumascleats();
     pumasclothing();
     pumasgear();
