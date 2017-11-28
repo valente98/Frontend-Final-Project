@@ -415,6 +415,10 @@ function nikecleatsproduct(x) {
     var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function nikecleats() {
@@ -432,6 +436,10 @@ function nikeclothingproduct(x) {
         '<p><img src="' + x.img_url + '" width="225" height="225" /></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function nikeclothing() {
@@ -448,6 +456,10 @@ function nikegearproduct(x) {
     var html = '<p><img src="' + x.img_url + '"/></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function nikegear() {
@@ -469,6 +481,10 @@ function adidascleatsproduct(x) {
     var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function adidascleats() {
@@ -486,6 +502,10 @@ function adidasclothingproduct(x) {
         '<p><img src="' + x.img_url + '" width="225" height="225" /></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function adidasclothing() {
@@ -502,6 +522,10 @@ function adidasgearproduct(x) {
     var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function adidasgear() {
@@ -523,6 +547,10 @@ function pumascleatsproduct(x) {
     var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function pumascleats() {
@@ -540,6 +568,10 @@ function pumasclothingproduct(x) {
         '<p><img src="' + x.img_url + '" width="225" height="225" /></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')">Purchase</button>';
     return html;
 }
 function pumasclothing() {
@@ -556,6 +588,10 @@ function pumasgearproduct(x) {
     var html = '<p><img src="' + x.img_url + '" width="225" height="225"/></p>';
     html += '<p>' + x.name + '</p>';
     html += '<p>$' + x.price + '</p>';
+    html +=
+        '<br><button id="buy" onclick="cart(' +
+        x.price +
+        ')" >Purchase</button>';
     return html;
 }
 function pumasgear() {
@@ -571,6 +607,19 @@ function showpumasproduct() {
     pumascleats();
     pumasclothing();
     pumasgear();
+}
+
+//********************** purchase item ************************/
+function cart(price) {
+    var total = 0;
+    var amount = parseInt(price);
+    total += amount;
+    var final = total.toString();
+    var html = '<h3>Cart</h3>';
+    html += '<p>Price = $' + final + '</p>';
+    html += '<p> You have sucessfuly purchase this item</p>';
+    $('#cart').attr('hidden', false);
+    $('#cart').html(html);
 }
 //********************** Main *********************************/
 function main() {
