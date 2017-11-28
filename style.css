@@ -100,3 +100,8 @@ li a:hover {
     margin-left: 60px;
     float: left;
 }
+#cart {
+    float: right;
+    text-align: center;
+    background-color: rgb(172, 252, 126);
+}
