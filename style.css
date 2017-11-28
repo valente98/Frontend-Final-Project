@@ -85,18 +85,18 @@ li a:hover {
     background-color: black;
 }
 #cleats {
-    margin-left: 100px;
+    margin-left: 60px;
     text-align: center;
     float: left;
 }
 #clothing {
     text-align: center;
     background-color: rgb(134, 197, 134);
-    margin-left: 100px;
+    margin-left: 80px;
     float: left;
 }
 #gear {
     text-align: center;
-    margin-left: 100px;
+    margin-left: 60px;
     float: left;
 }
