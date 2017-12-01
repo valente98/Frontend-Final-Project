@@ -7,7 +7,6 @@ body {
     height: 150px;
 }
 #logo {
-    margin-left: 30pc;
     margin-top: -55px;
 }
 nav {
@@ -18,26 +17,6 @@ nav {
     border-radius: 0;
     margin: 0;
 }
-
-#search {
-    height: 28px;
-    border-radius: 15px 0 0 15px;
-}
-
-#searchbutton {
-    height: 32px;
-    border-radius: 0 15px 15px 0;
-    margin-right: 3%;
-}
-
-#search,
-#searchbutton {
-    border-color: #ece6f0;
-    background-color: #f5f8fa;
-    border-style: solid;
-    border-width: 1px;
-}
-
 .navbar-right {
     float: right;
     padding: 10px;
@@ -66,39 +45,15 @@ li a {
 li a:hover {
     background-color: black;
 }
-
-#brand-option {
-    margin-left: 20pc;
-    position: absolute;
-    background-color: #fff;
-    height: 40px;
-    color: blue;
-    width: 50pc;
-}
-#option {
-    width: 20vh;
-    background: none;
-    border: none;
-    color: blue;
-}
-#option:hover {
-    background-color: black;
-}
 #cleats {
-    margin-left: 60px;
     text-align: center;
-    float: left;
 }
 #clothing {
     text-align: center;
     background-color: rgb(134, 197, 134);
-    margin-left: 80px;
-    float: left;
 }
 #gear {
     text-align: center;
-    margin-left: 60px;
-    float: left;
 }
 #cart {
     float: right;
