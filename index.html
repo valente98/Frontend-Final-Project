@@ -20,13 +20,13 @@
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="active" onclick="shownikeproduct()">Nike</a>
+                        <a onclick="brandproduct('nike')">Nike</a>
                     </li>
                     <li>
-                        <a onclick="showadidasproduct()">Adidas</a>
+                        <a onclick="brandproduct('adidas')">Adidas</a>
                     </li>
                     <li>
-                        <a onclick="showpumasproduct()">Pumas</a>
+                        <a onclick="brandproduct('pumas')">Pumas</a>
                     </li>
                     <ul class="nav navbar-nav navbar-right">
                     </ul>
@@ -34,6 +34,7 @@
         </nav>
         <div id="shopping-cart"></div>
         <div id="total" hidden></div>
+        <br>
         <div id="images" class="col-lg-6">
             <div id="slideshow">
                 <img class="mySlides" style="display: none;" src="./assets/photos/ACE17FIFA.jpg" height="400" width="400">
@@ -45,9 +46,14 @@
                 <img class="mySlides" style="display: none;" src="./assets/photos/pumaevo.jpg" height="400" width="400">
             </div>
         </div>
-        <div id="cleats" class="col-lg-4"></div>
-        <div id="clothing" class="col-lg-4"></div>
-        <div id="gear" class="col-lg-4"></div>
+        <br>
+        <div class="container">
+            <div id="information">
+                <div id="cleats" class="col-lg-4"></div>
+                <div id="clothing" class="col-lg-4"></div>
+                <div id="gear" class="col-lg-4"></div>
+            </div>
+        </div>
     </div>
 
     <script src="vendor/jquery.js"></script>
