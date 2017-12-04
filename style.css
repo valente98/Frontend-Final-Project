@@ -72,3 +72,27 @@ hr {
     padding: 3px;
     background-color: rgb(134, 197, 134);
 }
+#item {
+    font-weight: bolder;
+    font-size: 18px;
+    float: right;
+}
+#price {
+    font-weight: bolder;
+    font-size: 18px;
+    float: right;
+}
+#price2 {
+    font-weight: bolder;
+    font-size: 18px;
+    float: right;
+}
+#tax {
+    font-weight: bolder;
+    font-size: 18px;
+    float: right;
+}
+#back-info {
+    font-weight: bolder;
+    font-size: 14px;
+}
