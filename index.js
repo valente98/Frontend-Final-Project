@@ -497,6 +497,11 @@ function product(x, brand, type) {
     return html;
 }
 function brandproduct(brand) {
+    $('#total').attr('hidden', false);
+    $('#gear').attr('hidden', false);
+    $('#clothing').attr('hidden', false);
+    $('#cleats').attr('hidden', false);
+    $('#view-product').attr('hidden', true);
     $('#images').attr('hidden', true);
     var cleat =
         '<h2> Cleats</h2>' +
@@ -529,7 +534,7 @@ function shopping_cart(id, brand, type) {
         '<span>' +
         sum_item +
         '</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>';
-    html += '($' + CART.total + ')';
+    html += '($' + (CART.total * 1.07).toFixed(2) + ')';
     $('#total').attr('hidden', false);
     $('#total').html(html);
 }
@@ -537,24 +542,42 @@ function add(a, b) {
     return a + b;
 }
 //********************** view item ************************/
-function view_cart(x) {
+function deleted(items, price) {
+    item.pop();
+    CART.items.splice(items, 1);
+    CART.total -= price;
+    cart();
+}
+function view_cart(x, i) {
     var html =
-        '<br><br><button id="delete"><i class="fa fa-times" aria-hidden="true"></i></button>';
+        '<br><br><button onclick="deleted(' +
+        i +
+        ',' +
+        x.price +
+        ')"><i class="fa fa-times" aria-hidden="true"></i></button>';
     html +=
         '&nbsp; <img src="' + x.img_url + '" width="100" height="100">&nbsp; ';
     html += x.name;
+    html += '<p id="price2">Price: $' + x.price;
     html += '<hr>';
     return html;
 }
 function cart() {
-    var html = '<h1>Cart</h1>';
-    html += CART.items.map(function(x) {
-        return view_cart(x);
-    });
     $('#total').attr('hidden', true);
     $('#gear').attr('hidden', true);
     $('#clothing').attr('hidden', true);
     $('#cleats').attr('hidden', true);
+    var html = '<h1>Cart</h1>';
+    html += CART.items.map(function(x, i) {
+        return view_cart(x, i);
+    });
+    html += '<p id="back-info">CLick on a Brand to keep shoping</p>';
+    html += '<br><p id="item">Items: ' + CART.items.length + '</p>';
+    html += '<br><br><p id="tax"> Total: $' + CART.total.toFixed(2) + '</p>';
+    html += '<br><br><p id="tax"> Taxes: $1.07</p> ';
+    html +=
+        '<br><br><p id="price">Total Price: $' + (CART.total * 1.07).toFixed(2);
+    $('#view-product').attr('hidden', false);
     $('#view-product').html(html);
 }
 //********************** Main *********************************/
