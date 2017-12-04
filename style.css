@@ -57,6 +57,11 @@ li a:hover {
 }
 #cart {
     float: right;
+    font-size: 20px;
+    color: white;
     text-align: center;
-    background-color: rgb(172, 252, 126);
+    background-color: rgb(104, 109, 101);
+}
+#total {
+    margin-right: 40pc;
 }
