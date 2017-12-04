@@ -411,7 +411,7 @@ function product(x) {
     html +=
         '<br><button id="buy" onclick="shopping_cart(' +
         x.price +
-        ')">Purchase</button>';
+        ')">Add to Cart</button><br>';
     return html;
 }
 function brandproduct(x) {
