@@ -65,3 +65,10 @@ li a:hover {
 #total {
     margin-right: 40pc;
 }
+h1 {
+    text-align: center;
+}
+hr {
+    padding: 3px;
+    background-color: rgb(134, 197, 134);
+}
