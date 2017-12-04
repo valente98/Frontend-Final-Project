@@ -524,7 +524,7 @@ function shopping_cart(id, brand, type) {
     CART.total += parseInt(BRANDS[brand][type][id].price);
     item.push(1);
     var sum_item = item.reduce(add, 0);
-    var html = '<button class="btn" id="cart">';
+    var html = '<button class="btn" id="cart" onclick="cart()">';
     html +=
         '<span>' +
         sum_item +
@@ -536,18 +536,27 @@ function shopping_cart(id, brand, type) {
 function add(a, b) {
     return a + b;
 }
-//********************** purchase item ************************/
-// function cart(price) {
-//     var total = 0;
-//     var amount = parseInt(price);
-//     total += amount;
-//     var final = total.toString();
-//     var html = '<h3>Cart</h3>';
-//     html += '<p>Price = $' + final + '</p>';
-//     html += '<p> You have sucessfuly purchase this item</p>';
-//     $('#cart').attr('hidden', false);
-//     $('#cart').html(html);
-// }
+//********************** view item ************************/
+function view_cart(x) {
+    var html =
+        '<br><br><button id="delete"><i class="fa fa-times" aria-hidden="true"></i></button>';
+    html +=
+        '&nbsp; <img src="' + x.img_url + '" width="100" height="100">&nbsp; ';
+    html += x.name;
+    html += '<hr>';
+    return html;
+}
+function cart() {
+    var html = '<h1>Cart</h1>';
+    html += CART.items.map(function(x) {
+        return view_cart(x);
+    });
+    $('#total').attr('hidden', true);
+    $('#gear').attr('hidden', true);
+    $('#clothing').attr('hidden', true);
+    $('#cleats').attr('hidden', true);
+    $('#view-product').html(html);
+}
 //********************** Main *********************************/
 function main() {
     carousel();
