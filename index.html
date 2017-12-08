@@ -20,18 +20,73 @@
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a onclick="brandproduct('nike')">Nike</a>
+                        <a onclick="brandproduct('Nike')">Nike</a>
                     </li>
                     <li>
-                        <a onclick="brandproduct('adidas')">Adidas</a>
+                        <a onclick="brandproduct('Adidas')">Adidas</a>
                     </li>
                     <li>
-                        <a onclick="brandproduct('pumas')">Pumas</a>
+                        <a onclick="brandproduct('Pumas')">Pumas</a>
+                    </li>
+                    <li>
+                        <a onclick="saleitem()">Sale</a>
                     </li>
                     <ul class="nav navbar-nav navbar-right">
                     </ul>
             </div>
         </nav>
+        <div class="dropdown-content" hidden>
+            <form id="form-id">
+                <div class="form-group">
+                    <label for="inputitem" class="col-lg-2 control-label">Item name</label>
+                    <div class="col-lg-2">
+                        <input type="text" class="form-control" id="inputitem" placeholder="name">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="select" class="col-lg-2 control-label">Brand</label>
+                    <div class="col-lg-4">
+                        <select class="form-control" id="brand">
+                            <option>Nike</option>
+                            <option>Adidas</option>
+                            <option>Pumas</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="select" class="col-lg-2 control-label">Item type</label>
+                    <div class="col-lg-4">
+                        <select class="form-control" id="type">
+                            <option>Cleat</option>
+                            <option>Clothing</option>
+                            <option>Gear</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Price</label>
+                    <div class="col-lg-4 input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" id="price" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" onclick="$('.dropdown-content').attr('hidden', true)" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
         <div id="view-product" class="table"></div>
         <div id="total" class="navbar-fixed-top" hidden></div>
         <br>
