@@ -96,3 +96,7 @@ hr {
     font-weight: bolder;
     font-size: 14px;
 }
+#out {
+    font-weight: bolder;
+    background-color: #e6ecf0;
+}
