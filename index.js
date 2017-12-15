@@ -604,12 +604,12 @@ function shopping_cart(id, brand, type, event) {
     }
     CART.items.push(BRANDS[brand][type][id]);
     CART.total += parseInt(BRANDS[brand][type][id].price);
-    var html = '<button class="btn" id="cart" onclick="cart()">';
+    var html = '<center><button class="btn" id="cart" onclick="cart()">';
     html +=
         '<span>' +
         CART.items.length +
         '</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>';
-    html += '($' + (CART.total * 1.07).toFixed(2) + ')';
+    html += '($' + (CART.total * 1.07).toFixed(2) + ')</center>';
     $('#total').attr('hidden', false);
     $('#total').html(html);
 }
